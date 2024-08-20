@@ -1,0 +1,104 @@
+/*
+  Kris's Custom CSS Reset - 19/08/2024
+*/
+
+@charset "utf-8";
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Set body defaults：
+   1. Reset min-height
+   2. Typographic tweaks
+      - Add accessible line-height */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+}
+
+/* Remove default padding and list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Set link default style
+   1. Use the inherited text color
+   2. Remove underline 
+   3. Show pointer cursor on hover */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Set form controls:
+   1. Inherit fonts for inputs and buttons 
+   2. Set cursor for buttons 
+   3. Set text color to inherit */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+
+/* Prevent vertical resizing of `textarea` and make sure it's not tiny */
+textarea {
+  resize: vertical;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
